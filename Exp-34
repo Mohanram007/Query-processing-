@@ -1,0 +1,22 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate random data
+np.random.seed(0)  # For reproducibility
+x = np.random.rand(100) * 100  # 100 random points in the range [0, 100]
+y = np.random.rand(100) * 100  # 100 random points in the range [0, 100]
+sizes = np.random.rand(100) * 100  # Random sizes for the balls
+
+# Create a scatter plot with different sized balls
+plt.figure(figsize=(10, 6))
+scatter = plt.scatter(x, y, s=sizes, alpha=0.5, c='blue', edgecolors='w')
+
+# Adding titles and labels
+plt.title('Scatter Plot with Balls of Different Sizes')
+plt.xlabel('Random X values')
+plt.ylabel('Random Y values')
+
+# Show the plot
+plt.grid()
+plt.tight_layout()
+plt.show()
