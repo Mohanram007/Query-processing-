@@ -1,0 +1,21 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate random data
+np.random.seed(0)  # For reproducibility
+x = np.random.rand(100) * 100  # 100 random points in the range [0, 100]
+y = np.random.rand(100) * 100  # 100 random points in the range [0, 100]
+
+# Create a scatter plot
+plt.figure(figsize=(10, 6))
+plt.scatter(x, y, color='blue', alpha=0.5, edgecolors='w', s=100)
+
+# Adding titles and labels
+plt.title('Scatter Graph of Random Distribution')
+plt.xlabel('Random X values')
+plt.ylabel('Random Y values')
+
+# Show the plot
+plt.grid()
+plt.tight_layout()
+plt.show()
